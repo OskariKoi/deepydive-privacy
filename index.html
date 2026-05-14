@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Deepy Dive - Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #020811;
+      --bg-deep: #00040a;
+      --panel: rgba(7, 22, 34, 0.82);
+      --panel-strong: rgba(10, 31, 45, 0.94);
+      --line: rgba(122, 219, 255, 0.22);
+      --line-strong: rgba(140, 230, 255, 0.46);
+      --text: #e8f8ff;
+      --muted: #9bb7c6;
+      --soft: #c3e8f5;
+      --aqua: #71e6ff;
+      --gold: #ffd68a;
+      --green: #8cf8cf;
+      --danger: #ff9f9f;
+      --shadow: rgba(0, 0, 0, 0.42);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% -10%, rgba(82, 205, 255, 0.18), transparent 28rem),
+        radial-gradient(circle at 80% 8%, rgba(86, 255, 209, 0.11), transparent 22rem),
+        linear-gradient(180deg, #062033 0%, #03111d 34%, var(--bg-deep) 100%);
+      line-height: 1.65;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), transparent 68%);
+    }
+
+    a {
+      color: var(--aqua);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover {
+      color: #b8f4ff;
+    }
+
+    .page {
+      width: min(100%, 1040px);
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+
+    .hero {
+      min-height: 340px;
+      display: grid;
+      align-items: end;
+      padding: 48px 0 34px;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(113, 230, 255, 0.7), transparent);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 820px;
+      font-size: clamp(2.45rem, 8vw, 5.8rem);
+      line-height: 0.98;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    .subtitle {
+      max-width: 720px;
+      margin: 18px 0 0;
+      color: var(--soft);
+      font-size: clamp(1rem, 2.6vw, 1.18rem);
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(0, 12, 20, 0.46);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .pill strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 230px minmax(0, 1fr);
+      gap: 28px;
+      padding-top: 30px;
+    }
+
+    nav {
+      align-self: start;
+      position: sticky;
+      top: 18px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(1, 10, 18, 0.76);
+      box-shadow: 0 18px 48px var(--shadow);
+    }
+
+    nav h2 {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      display: block;
+      padding: 9px 0;
+      color: var(--soft);
+      font-size: 0.95rem;
+      text-decoration: none;
+      border-top: 1px solid rgba(122, 219, 255, 0.10);
+    }
+
+    nav a:hover {
+      color: var(--aqua);
+    }
+
+    main {
+      display: grid;
+      gap: 18px;
+    }
+
+    section {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: 0 18px 48px var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    section.feature {
+      border-color: var(--line-strong);
+      background: var(--panel-strong);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: var(--text);
+      font-size: clamp(1.35rem, 4vw, 2rem);
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 24px 0 10px;
+      color: var(--gold);
+      font-size: 1.08rem;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--soft);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 1.15rem;
+      color: var(--soft);
+    }
+
+    li {
+      margin: 7px 0;
+      padding-left: 0.15rem;
+    }
+
+    .callout {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-left: 3px solid var(--aqua);
+      border-radius: 6px;
+      background: rgba(113, 230, 255, 0.08);
+      color: var(--text);
+    }
+
+    .callout strong {
+      color: var(--aqua);
+    }
+
+    .language-divider {
+      margin: 28px 0 0;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+    }
+
+    .language-label {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: var(--green);
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding: 22px 0 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        padding: 20px 14px 42px;
+      }
+
+      .hero {
+        min-height: 300px;
+        padding-top: 36px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      nav {
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 14px;
+      }
+
+      nav h2 {
+        grid-column: 1 / -1;
+      }
+
+      section {
+        padding: 20px 16px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      nav {
+        grid-template-columns: 1fr;
+      }
+
+      .meta-row {
+        display: grid;
+      }
+
+      .pill {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Deepy Dive</p>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">This page explains what data is used by Deepy Dive, including optional rewarded ads, Apple Game Center, in-app purchases, and local game progress storage.</p>
+        <div class="meta-row" aria-label="Policy metadata">
+          <span class="pill"><strong>Last updated:</strong>&nbsp;May 5, 2026</span>
+          <span class="pill"><strong>Developer:</strong>&nbsp;Oskari Koivisto</span>
+          <span class="pill"><strong>App:</strong>&nbsp;Deepy Dive</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav aria-label="Privacy policy sections">
+        <h2>Sections</h2>
+        <a href="#overview">Overview</a>
+        <a href="#admob">AdMob</a>
+        <a href="#game-center">Game Center</a>
+        <a href="#purchases">In-App Purchases</a>
+        <a href="#local-storage">Local Storage</a>
+        <a href="#choices">Choices & Deletion</a>
+        <a href="#contact">Contact</a>
+        <a href="#suomi">Suomi</a>
+      </nav>
+
+      <main>
+        <section id="overview" class="feature">
+          <h2>Overview</h2>
+          <p>Deepy Dive ("the App") is developed by Oskari Koivisto ("we", "us", or "our"). This Privacy Policy explains what data is collected when you use our App and how it is used.</p>
+          <p>We do not collect personal data directly and we do not run our own account system or backend server for player data.</p>
+        </section>
+
+        <section id="admob">
+          <h2>AdMob</h2>
+          <p>The App includes optional rewarded video advertisements served by Google AdMob. Watching an ad is always voluntary. In the current game, rewarded ads are offered as a "Recover Signal" option when you are out of lives, and grant +1 life only after the ad reward is completed.</p>
+          <p>When you choose to watch an ad, AdMob may collect data as described in Google's Privacy Policy. This may include:</p>
+          <ul>
+            <li>Advertising identifiers, where permitted by your device settings and consent choices</li>
+            <li>General device information, such as device model and operating system version</li>
+            <li>Approximate location based on IP address</li>
+            <li>Ad interaction data, such as impressions and clicks</li>
+          </ul>
+          <p>This data is collected and processed by Google LLC. We do not receive or store this data on our own servers.</p>
+          <p>Depending on your region, device settings, and consent choices, ads may be personalized, non-personalized, or limited.</p>
+          <p>For details on how Google handles this data, see <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+        </section>
+
+        <section id="game-center">
+          <h2>Game Center</h2>
+          <p>The App supports Apple Game Center leaderboards. If you sign in to Game Center, your best depth score may be submitted to Apple Game Center for leaderboard functionality.</p>
+          <p>Game Center is provided by Apple. We do not receive or store your Game Center account information on our own servers. Apple's Privacy Policy applies to Game Center.</p>
+          <p><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></p>
+        </section>
+
+        <section id="purchases">
+          <h2>In-App Purchases</h2>
+          <p>The App offers optional in-app purchases for cosmetic skins. Purchases are processed entirely through Apple's App Store and StoreKit framework.</p>
+          <p>We do not process payments directly and we do not receive or store your payment information. Apple's Privacy Policy applies to all App Store transactions.</p>
+        </section>
+
+        <section id="local-storage">
+          <h2>Local Storage</h2>
+          <p>The App stores game progress data locally on your device using Apple's standard mechanisms, including UserDefaults and App Group shared storage. This data includes:</p>
+          <ul>
+            <li>Upgrade levels and shard count</li>
+            <li>Boss defeat history and skin unlocks</li>
+            <li>Daily challenge completion status</li>
+            <li>Lives count and life regeneration timing</li>
+            <li>Best depth, recent run stats, and death history</li>
+            <li>Selected skin and selected build path</li>
+            <li>Settings, such as audio mute preference</li>
+          </ul>
+          <p>This locally stored game progress does not leave your device and is not accessible to us.</p>
+        </section>
+
+        <section id="choices">
+          <h2>Choices & Deletion</h2>
+          <p>You can manage tracking and advertising choices via iOS Settings, including Privacy & Security -> Tracking where available.</p>
+          <p>Where required, Google may show a consent form before ads are requested.</p>
+          <p>Because Deepy Dive does not create user accounts or store personal data on our own servers, there is no account-based data to delete. You can remove all locally stored game data at any time by deleting the App from your device.</p>
+        </section>
+
+        <section>
+          <h2>Children's Privacy</h2>
+          <p>The App is intended for a general audience and is not specifically directed at children under 13. The App does not knowingly collect personal information from children under the age of 13.</p>
+          <p>If you believe a child under 13 has provided personal information through this App, please contact us at the address below.</p>
+        </section>
+
+        <section>
+          <h2>Changes to This Policy</h2>
+          <p>If we update this Privacy Policy, we will update the "Last updated" date above. By continuing to use the App after updates become effective, you acknowledge the updated Privacy Policy.</p>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>If you have questions about this Privacy Policy, contact us at:</p>
+          <p><a href="mailto:oskari.koivisto93@gmail.com">oskari.koivisto93@gmail.com</a></p>
+        </section>
+
+        <section id="suomi" class="feature">
+          <span class="language-label">Suomenkielinen versio</span>
+          <h2>Tietosuojakäytäntö - Deepy Dive</h2>
+          <p><strong>Päivitetty:</strong> 5. toukokuuta 2026</p>
+
+          <h3>Yleiskatsaus</h3>
+          <p>Deepy Dive -sovelluksen on kehittänyt Oskari Koivisto. Tämä tietosuojakäytäntö kertoo, mitä tietoja kerätään sovelluksen käytön yhteydessä ja miten niitä käytetään.</p>
+          <p>Emme kerää henkilötietoja suoraan, emmekä ylläpidä omaa käyttäjätili- tai palvelinjärjestelmää pelaajadatalle.</p>
+
+          <h3>AdMob</h3>
+          <p>Sovellus sisältää valinnaisia palkkiovideomainoksia, joita palvelee Google AdMob. Mainoksen katsominen on aina vapaaehtoista. Nykyisessä pelissä mainos tarjotaan "Recover Signal" -vaihtoehtona, kun elämät ovat lopussa, ja se antaa +1 elämän vasta, kun mainospalkinto on suoritettu.</p>
+          <p>Kun katsot mainoksen, AdMob voi kerätä Googlen tietosuojakäytännön mukaisesti esimerkiksi seuraavia tietoja:</p>
+          <ul>
+            <li>Mainostunnisteet, jos laitteesi asetukset ja suostumusvalinnat sen sallivat</li>
+            <li>Yleisiä laitetietoja, kuten laitemalli ja käyttöjärjestelmäversio</li>
+            <li>Likimääräinen sijainti IP-osoitteen perusteella</li>
+            <li>Mainosvuorovaikutusdata, kuten näytöt ja klikkaukset</li>
+          </ul>
+          <p>Nämä tiedot kerää ja käsittelee Google LLC. Emme vastaanota tai tallenna tätä dataa omille palvelimillemme.</p>
+          <p>Alueestasi, laitteen asetuksista ja suostumusvalinnoistasi riippuen mainokset voivat olla personoituja, personoimattomia tai rajoitettuja.</p>
+
+          <h3>Game Center</h3>
+          <p>Sovellus tukee Applen Game Center -leaderboardeja. Jos kirjaudut Game Centeriin, paras syvyyspisteesi voidaan lähettää Apple Game Centeriin leaderboard-toimintoa varten.</p>
+          <p>Game Center on Applen palvelu. Emme vastaanota tai tallenna Game Center -tilitietojasi omille palvelimillemme. Game Centeriin sovelletaan Applen tietosuojakäytäntöä.</p>
+
+          <h3>Sovelluksen sisäiset ostot</h3>
+          <p>Kosmeettisia skinejä voi ostaa Applen App Store -palvelun kautta. Emme käsittele maksuja suoraan emmekä tallenna maksutietojasi.</p>
+
+          <h3>Paikallinen tallennus</h3>
+          <p>Sovellus tallentaa pelitilanteen paikallisesti laitteellesi Applen vakiomekanismeilla. Tallennettaviin tietoihin kuuluvat päivitystasot, shard-saldo, bossitilastot, avatut skinit, valittu skini ja build-polku, elämien määrä ja palautumisajastus, paras syvyys, viimeisimpien runien tilastot, kuolinsyyt, haastetila ja asetukset. Tämä data ei koskaan poistu laitteeltasi.</p>
+
+          <h3>Datan poistaminen ja valinnat</h3>
+          <p>Voit hallita seurantaa ja mainosvalintoja iOS-asetuksissa, mukaan lukien Tietosuoja ja turvallisuus -> Seuranta, jos asetus on käytettävissä. Google voi näyttää suostumuslomakkeen ennen mainosten pyytämistä, jos se on alueesi sääntöjen perusteella tarpeen.</p>
+          <p>Koska Deepy Dive ei luo käyttäjätilejä eikä tallenna henkilötietoja omille palvelimillemme, sovelluksessa ei ole tilikohtaista dataa poistettavaksi. Voit poistaa kaiken paikallisesti tallennetun pelidatan milloin tahansa poistamalla sovelluksen laitteeltasi.</p>
+
+          <h3>Lasten tietosuoja</h3>
+          <p>Sovellus on tarkoitettu yleisölle eikä sitä ole erityisesti suunnattu alle 13-vuotiaille lapsille. Sovellus ei tietoisesti kerää henkilötietoja alle 13-vuotiailta lapsilta.</p>
+
+          <h3>Yhteystiedot</h3>
+          <p><a href="mailto:oskari.koivisto93@gmail.com">oskari.koivisto93@gmail.com</a></p>
+        </section>
+
+        <p class="footer">Deepy Dive Privacy Policy. This is a static HTML page and can be hosted directly on GitHub Pages.</p>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
